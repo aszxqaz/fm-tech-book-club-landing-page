@@ -1,0 +1,19 @@
+.testimonial {
+  display: grid;
+  gap: 2rem;
+
+  @media (min-width: 90rem) {
+    justify-items: center;
+  }
+}
+
+.testimonial__stars {
+  display: flex;
+  gap: 6px;
+}
+
+.testimonial__quote {
+  @media (min-width: 90rem) {
+    text-align: center;
+  }
+}

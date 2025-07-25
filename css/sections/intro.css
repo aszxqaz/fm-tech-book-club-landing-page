@@ -1,0 +1,37 @@
+.intro {
+}
+
+.intro__group {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  @media (min-width: 90rem) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  img {
+    border-radius: 0.5rem;
+  }
+}
+
+.intro__body {
+  flex: 54;
+}
+
+.intro__image {
+  flex: 57;
+}
+
+.intro__heading {
+  margin-bottom: 1.5rem;
+}
+
+.intro__text {
+  margin-bottom: 2rem;
+}
+
+.intro__button {
+  margin-bottom: 1.25rem;
+}

@@ -1,0 +1,40 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  font: inherit;
+  font-family: var(--font-family-monospace);
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: -0.0625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-neutral-900);
+  border: 2px solid var(--color-neutral-900);
+  border-radius: 0.5rem;
+  line-height: 1.3;
+  padding-inline: 1.375rem;
+  padding-block: 1.34375rem 1.14375rem;
+  background: var(--color-primary-50);
+
+  .icon {
+    display: block;
+    aspect-ratio: 1;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  @media (min-width: 48rem) {
+    font-size: 1.125rem;
+    letter-spacing: -0.02em;
+  }
+}
+
+.button--alternate {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+}

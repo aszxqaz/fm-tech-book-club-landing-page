@@ -1,0 +1,21 @@
+.journey {
+  padding: 4rem 1rem;
+  border-radius: 0.75rem;
+
+  @media (min-width: 48rem) {
+    padding: 5rem 2rem;
+  }
+
+  @media (min-width: 90rem) {
+    padding-inline: 5rem;
+  }
+}
+
+.journey__heading {
+  margin-bottom: 2rem;
+
+  @media (min-width: 90rem) {
+    margin-bottom: 3.75rem;
+    text-align: center;
+  }
+}

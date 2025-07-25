@@ -1,0 +1,124 @@
+@import "./css/reset.css";
+@import "./css/typography.css";
+@import "./css/utils.css";
+@import "./css/components/components.css";
+@import "./css/sections/sections.css";
+
+:root {
+  --color-neutral-900: #062630;
+  --color-neutral-700: #385159;
+  --color-neutral-200: #e6e1df;
+  --color-neutral-100: #faf5f3;
+  --color-neutral-0: #ffffff;
+
+  --color-primary-400: #fea36f;
+  --color-primary-100: #ffe2d1;
+  --color-primary-50: #fff5ef;
+
+  --glow-color: #9cc9da;
+
+  --foreground-gradient: linear-gradient(107deg, #d18c63 0%, #062630 61.84%);
+  --background-gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  --background-gradient-2: radial-gradient(
+    rgba(10, 13, 22, 0.01) 20%,
+    rgba(10, 13, 22, 0.05) 100%
+  );
+
+  --font-family-sans: "Inter", sans-serif;
+  --font-family-monospace: "Martian Mono", monospace;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--color-neutral-700);
+  /* background: conic-gradient(from 90deg at 2px 2px,#0000 90deg,#366 0) 0 0/100px 100px; */
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-monospace);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* reset */
+
+/* utils */
+.semibold {
+  font-weight: 600;
+}
+
+.bg-square {
+  background-color: var(--color-neutral-100);
+  background-image: var(--background-gradient-2),
+    url("./assets/images/pattern-light-bg.svg"),
+    url("./assets/images/pattern-glow.svg");
+
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-position: center, center, bottom -600px right -600px;
+  background-size: auto, auto, auto, 684px 684px;
+}
+
+.fg-gradient {
+  background: var(--foreground-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  @media (min-width: 90rem) {
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+
+.section-group__body {
+  flex: 53;
+}
+
+.section-group__image {
+  flex: 56;
+  border-radius: 0.765625rem;
+  overflow: clip;
+}
+
+.section-group--reversed {
+  @media (min-width: 90rem) {
+    flex-direction: row-reverse;
+  }
+}
+
+.circle {
+  display: inline-block;
+  position: relative;
+
+  > img {
+    position: absolute;
+    inset: 0;
+    max-width: unset;
+    width: 120%;
+    transform: translateX(-10%);
+  }
+}
+
+/* layout */
+
+/* components */
+
+.logo {
+  /* &::before { */
+  content: url("./assets/images/logo.svg");
+  /* } */
+}

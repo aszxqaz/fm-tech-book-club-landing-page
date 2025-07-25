@@ -1,0 +1,23 @@
+.reminder-footer-wrapper {
+  background-color: var(--color-neutral-900);
+  background-image: url("../../assets/images/pattern-dark-bg.svg");
+  color: var(--color-neutral-0);
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+}
+
+.reminder {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 4rem;
+}
+
+.reminder__heading {
+  margin-bottom: 2.5rem;
+  color: inherit;
+  text-align: center;
+}
+
+.reminder__button {
+  margin-bottom: 1.5rem;
+}

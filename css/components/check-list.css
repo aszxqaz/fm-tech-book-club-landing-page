@@ -1,0 +1,30 @@
+.check-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.check-list__item {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: url("../../assets/images/icon-check.svg");
+    background-size: cover;
+  }
+}
+
+.check-list--sm {
+  gap: 1rem;
+
+  > .check-list__item {
+    &::before {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

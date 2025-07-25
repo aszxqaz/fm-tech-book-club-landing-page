@@ -1,0 +1,13 @@
+.read-together {
+}
+
+.read-together__heading {
+  margin-bottom: 1.5rem;
+
+  @media (min-width: 48rem) {
+    margin-bottom: 2.125rem;
+  }
+}
+
+.read-together__check-list {
+}

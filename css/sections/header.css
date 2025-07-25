@@ -1,0 +1,21 @@
+.header-intro-container {
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+
+  @media (min-width: 48rem) {
+    padding-top: 2rem;
+  }
+}
+
+.header {
+  display: flex;
+  margin-bottom: 3rem;
+
+  @media (min-width: 48rem) {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 90rem) {
+    margin-bottom: 5rem;
+  }
+}
