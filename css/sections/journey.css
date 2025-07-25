@@ -13,6 +13,8 @@
 
 .journey__heading {
   margin-bottom: 2rem;
+  max-width: unset;
+  text-wrap: unset;
 
   @media (min-width: 90rem) {
     margin-bottom: 3.75rem;

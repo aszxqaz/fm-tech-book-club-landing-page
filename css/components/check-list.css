@@ -14,7 +14,8 @@
     width: 1.75rem;
     height: 1.75rem;
     background: url("../../assets/images/icon-check.svg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 

@@ -13,6 +13,8 @@
 }
 
 .testimonial__quote {
+  text-wrap: unset;
+
   @media (min-width: 90rem) {
     text-align: center;
   }
