@@ -1,4 +1,23 @@
 .not-average {
+  position: relative;
+
+  @media (min-width: 48rem) {
+    &::after {
+      position: absolute;
+      content: url("../../assets/images/logos-tech.svg");
+      bottom: 0;
+      right: 0;
+      transform: translate(-50%, -20%);
+    }
+  }
+
+  @media (min-width: 90rem) {
+    &::after {
+      right: unset;
+      left: 50%;
+      transform: translate(-50%, -17%);
+    }
+  }
 }
 
 .not-average__heading {

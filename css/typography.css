@@ -28,16 +28,31 @@
   font-weight: 600;
 }
 
+body {
+  font-family: var(--font-family-sans);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--color-neutral-700);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-monospace);
+}
+
 .heading {
   font-family: var(--font-family-monospace);
   font-weight: 600;
   line-height: 1.3;
   color: var(--color-neutral-900);
+  text-wrap: balance;
 }
 
 .heading--1 {
   font-size: 2.375rem;
   letter-spacing: -0.0625rem;
+  text-wrap: unset;
 
   @media (min-width: 48rem) {
     font-weight: 700;
