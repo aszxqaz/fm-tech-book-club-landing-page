@@ -26,7 +26,8 @@ This is a solution to the [Tech book club landing page challenge on Frontend Men
 
 ### Built with
 
-- Vue
+- HTML
+- CSS
 
 ## Author
 
